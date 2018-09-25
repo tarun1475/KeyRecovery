@@ -1,0 +1,80 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="css/font.css" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bundle.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="js/preloader.js"></script>
+    </head>
+
+    <body onload="checkUser()">
+      
+      <div class="card-panel">
+        <h5>Bitcoin Uno</h5>
+        <h2>$6000</h2>
+        <p>Est. value INR 420000</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+        <div class="col s6">
+          <a class="waves-effect waves-light btn-large">Send</a>
+        </div>
+         <div class="col s6">
+          <a class="waves-effect btn-large">Receive</a>
+          <p id="profile"><a onclick="goToProfile()" class="waves-effect"><img class="responsive-img" width="50" height="50" src="images/profile.png"></a> </p>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h3>Transactions</h3>
+                  <table>
+                  <thead>
+                    <tr>
+                        <th>Transaction Id</th>
+                        <th>Amount</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>MC4CAQAwBQYDK2VwBCIEIGn</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>MC4CAQAwBQYDK2VwBCIEIGn</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>MC4CAQAwBQYDK2VwBCIEIGn</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>MC4CAQAwBQYDK2VwBCIEIGn</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>MC4CAQAwBQYDK2VwBCIEIGn</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+      
+      </div>
+            
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+       <script src="js/functions.js"></script>
+    </body>
+  </html>
