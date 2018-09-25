@@ -1,5 +1,10 @@
 function checkUser(){
     if(localStorage.request_id != undefined) window.location = "request.html";
+
+    if(localStorage.accountKeys == undefined){
+        window.location = "register.html";
+
+    }
 }
 
 function fetchRecoveryRequest(){
