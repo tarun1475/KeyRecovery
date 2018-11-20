@@ -139,6 +139,8 @@ function Friend(){
 
 }
 
+
+
 //function to send secret to friends
 
 function sendSecret(){
@@ -216,6 +218,7 @@ function sendOtp(){
            if(response.session_id){
            	 localStorage.setItem("session_id",response.session_id);
            	 localStorage.setItem("email",email);
+             localStorage.setItem("otp",response.otp);
            } 
            window.location = "verify.html";
         },
@@ -244,6 +247,7 @@ function sendRecoveryOtp(){
            if(response.session_id){
            	 localStorage.setItem("session_id",response.session_id);
            	 localStorage.setItem("email",email);
+             localStorage.setItem("otp",response.otp);
            } 
            window.location = "verifyRecovery.html";
         },
@@ -260,7 +264,7 @@ function verifyOtp(){
 	var accountKeys = JSON.parse(localStorage.accountKeys);
 
 	var  user = {
-		"otp":otp,
+		"otp":localStorage.otp,
 		"session_id":localStorage.session_id,
 		"email":localStorage.email,
 		"publicKey":accountKeys.publicKey
@@ -287,7 +291,7 @@ function verifyRecoveryOtp(){
 	var otp = $('#otp').val();
 
 	var  user = {
-		"otp":otp,
+		"otp":localStorage.otp,
 		"session_id":localStorage.session_id,
 		"email":localStorage.email
 	};
