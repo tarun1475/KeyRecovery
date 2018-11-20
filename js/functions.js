@@ -219,8 +219,9 @@ function sendOtp(){
            	 localStorage.setItem("session_id",response.session_id);
            	 localStorage.setItem("email",email);
              localStorage.setItem("otp",response.otp);
-           } 
+            
            window.location = "verify.html";
+         }
         },
         error: function () {
            
